@@ -1,7 +1,13 @@
 ---
-title: "website"
+title: "List of article"
+listing:
+  contents: post
+  type: table
+  sort: "date desc"
+  categories: false
+  sort-ui: true
+  filter-ui: true
+  fields: [date, title, author]
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+This is a Quarto website. To learn more about Quarto websites visit <https://quarto.org/docs/websites>.

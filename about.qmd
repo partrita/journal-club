@@ -2,4 +2,12 @@
 title: "About"
 ---
 
-About this site
+Welcome to the **Journal Club** repository.
+
+This website is a curated collection of literature reviews, summaries, and discussions focusing on:
+
+*   **Biparatopic Antibodies**: Their therapeutic applications and clinical prospects.
+*   **Computational Biology**: Advanced workflows for antibody structure prediction and de novo design.
+*   **Protein Engineering**: Innovative strategies for enhancing target specificity and affinity.
+
+Our goal is to stay at the forefront of biotherapeutic development through rigorous analysis of current research.

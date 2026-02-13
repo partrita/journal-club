@@ -3,7 +3,8 @@ project:
   output-dir: docs
 
 website:
-  title: "website"
+  title: "Journal Club"
+  search: true
   navbar:
     left:
       - href: index.qmd
@@ -20,4 +21,3 @@ format:
 
 execute:
   freeze: auto
-
