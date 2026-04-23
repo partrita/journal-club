@@ -2,7 +2,6 @@
 title: "Biparatopic antibodies: therapeutic applications and prospects"
 author: ["David L. Niquille", "Kyle M. Fitzgerald", "Nimish Gera"]
 date: "2026-02-10"
-bibliography: references.bib
 ---
 
 
