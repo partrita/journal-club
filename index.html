@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f7919f14b89ae9a431cba0b331f0b52b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5b1d37bc7e979b072e40b22a019ec33a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -82,9 +82,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-description','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -186,9 +186,9 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="QW50aWJvZGllcw==">Antibodies <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QW50aWJvZHklMjBEZXNpZ24=">Antibody Design <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QmlwYXJhdG9waWM=">Biparatopic <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29tcHV0YXRpb25hbCUyMEJpb2xvZ3k=">Computational Biology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RmMlMjAlRUMlOUMlQjUlRUQlOTUlQTklMjAlRUIlOEIlQTglRUIlQjAlQjElRUMlQTclODg=">Fc 융합 단백질 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RmMtZnVzZWQlMjBQcm90ZWlucw==">Fc-fused Proteins <span class="quarto-category-count">(1)</span></div><div class="category" data-category="T25jb2xvZ3k=">Oncology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGhhcm1hY29raW5ldGljcw==">Pharmacokinetics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHJvdGVpbiUyMEVuZ2luZWVyaW5n">Protein Engineering <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dEZvbGQlMjBTeXN0ZW0=">tFold System <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVCJThCJUE4JUVCJUIwJUIxJUVDJUE3JTg4JTIwJUVBJUIzJUI1JUVEJTk1JTk5">단백질 공학 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJTk1JUJEJUVCJThGJTk5JUVEJTk1JTk5">약동학 <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -211,26 +211,26 @@ window.Quarto = {
 </header>
 
 
-<p>This is a Quarto website. To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<p>이곳은 최신 바이오 및 제약 관련 논문들을 리뷰하고 공유하는 저널 클럽입니다. 아래 리스트에서 등록된 논문 기사들을 확인하실 수 있습니다.</p>
 
 
 
 
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title" data-direction="asc">
+        Title
+      </option>
       <option value="listing-date-sort" data-direction="asc">
         Date - Oldest
       </option>
       <option value="listing-date-sort" data-direction="desc">
         Date - Newest
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
       </option>
       <option value="listing-author" data-direction="asc">
         Author
@@ -242,80 +242,108 @@ window.Quarto = {
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="UGhhcm1hY29raW5ldGljcyUyQ0ZjLWZ1c2VkJTIwUHJvdGVpbnMlMkNQcm90ZWluJTIwRW5naW5lZXJpbmc=" data-listing-date-sort="1776902400000" data-listing-file-modified-sort="1776929241997" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="95" data-listing-word-count-sort="18901">
+<div class="thumbnail"><a href="./post/260423/nonspecific_cellular_interactions_are.html" class="no-external">
 
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
+<img loading="lazy" src="./post/260423/images/86fbd11842e8094367259a820a7f027fe9a6f0947826d0b5c07c638717a84a74.jpg" class="thumbnail-image">
 
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./post/260423/nonspecific_cellular_interactions_are.html" class="no-external">Nonspecific Cellular Interactions Are a Key Determinant in the Disposition of Fc-Fused Proteins</a>
+</h3>
+<div class="delink listing-description"><a href="./post/260423/nonspecific_cellular_interactions_are.html" class="no-external">
+<p>Physicochemical attributes and cellular processes crucial for the target-independent disposition of Fc-fused proteins.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./post/260423/nonspecific_cellular_interactions_are.html" class="no-external">
+<div class="listing-date">
+Apr 23, 2026
+</div>
+<div class="listing-author">
+Mark A. Bryniarski, Songyu Wang, Aochiu Chen, Brian Coventry, Elif Nihal Korkmaz, Md Tariqul Haque Tuhin, Eunkyung Clare Ko, Devin L. Wakefield, Edward L. LaGory, Hao Wu, Achala Punchi Hewage, Khue Dang, Marcus Soto, Manuel Ponce, Esperanza Ojeda, Kip P. Conner, Lance J. Stewart, Christine E. Tinberg, Ai Ching Lim, David Baker, and Kevin D. Cook
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="JUVDJTk1JUJEJUVCJThGJTk5JUVEJTk1JTk5JTJDRmMlMjAlRUMlOUMlQjUlRUQlOTUlQTklMjAlRUIlOEIlQTglRUIlQjAlQjElRUMlQTclODglMkMlRUIlOEIlQTglRUIlQjAlQjElRUMlQTclODglMjAlRUElQjMlQjUlRUQlOTUlOTk=" data-listing-date-sort="1776902400000" data-listing-file-modified-sort="1776929241998" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="78" data-listing-word-count-sort="15472">
+<div class="thumbnail"><a href="./post/260423/nonspecific_cellular_interactions_are_ko.html" class="no-external">
 
-<th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
-</th>
+<img loading="lazy" src="./post/260423/images/86fbd11842e8094367259a820a7f027fe9a6f0947826d0b5c07c638717a84a74.jpg" class="thumbnail-image">
 
-</tr>
-</thead>
-<tbody class="list">
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./post/260423/nonspecific_cellular_interactions_are_ko.html" class="no-external">비특이적 세포 상호작용은 Fc 융합 단백질의 체내 소실을 결정하는 핵심 요소이다</a>
+</h3>
+<div class="delink listing-description"><a href="./post/260423/nonspecific_cellular_interactions_are_ko.html" class="no-external">
+<p>Fc 융합 단백질의 체내 소실에 핵심적인 물리화학적 속성과 세포 과정에 대한 연구.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./post/260423/nonspecific_cellular_interactions_are_ko.html" class="no-external">
+<div class="listing-date">
+Apr 23, 2026
+</div>
+<div class="listing-author">
+Mark A. Bryniarski, Songyu Wang, Aochiu Chen, Brian Coventry, Elif Nihal Korkmaz, Md Tariqul Haque Tuhin, Eunkyung Clare Ko, Devin L. Wakefield, Edward L. LaGory, Hao Wu, Achala Punchi Hewage, Khue Dang, Marcus Soto, Manuel Ponce, Esperanza Ojeda, Kip P. Conner, Lance J. Stewart, Christine E. Tinberg, Ai Ching Lim, David Baker, and Kevin D. Cook
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="QW50aWJvZHklMjBEZXNpZ24lMkNDb21wdXRhdGlvbmFsJTIwQmlvbG9neSUyQ3RGb2xkJTIwU3lzdGVt" data-listing-date-sort="1770768000000" data-listing-file-modified-sort="1776929241981" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="91" data-listing-word-count-sort="18048">
+<div class="thumbnail"><a href="./post/260211/s41467_025_67361_9_260212_171621.html" class="no-external">
 
-<tr data-index="0" data-listing-date-sort="1776902400000" data-listing-file-modified-sort="1776929155658" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="78" data-listing-word-count-sort="15472" data-listing-title-sort="비특이적 세포 상호작용은 Fc 융합 단백질의 체내 소실을 결정하는 핵심 요소이다" data-listing-filename-sort="nonspecific_cellular_interactions_are_ko.qmd">
-<td>
-<span class="listing-date">Apr 23, 2026</span>
-</td>
-<td>
-<a href="./post/260423/nonspecific_cellular_interactions_are_ko.html" class="title listing-title">비특이적 세포 상호작용은 Fc 융합 단백질의 체내 소실을 결정하는 핵심 요소이다</a>
-</td>
-<td>
-<span class="listing-author">Mark A. Bryniarski, Songyu Wang, Aochiu Chen, Brian Coventry, Elif Nihal Korkmaz, Md Tariqul Haque Tuhin, Eunkyung Clare Ko, Devin L. Wakefield, Edward L. LaGory, Hao Wu, Achala Punchi Hewage, Khue Dang, Marcus Soto, Manuel Ponce, Esperanza Ojeda, Kip P. Conner, Lance J. Stewart, Christine E. Tinberg, Ai Ching Lim, David Baker, and Kevin D. Cook</span>
-</td>
+<img loading="lazy" src="./post/260211/images/2aab37fc2e7fee83cd88246f261756ef2f31ac22dbd8a5ff23395aa95e4d9ce1.jpg" class="thumbnail-image">
 
-</tr>
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./post/260211/s41467_025_67361_9_260212_171621.html" class="no-external">De novo design of epitope-specific antibodies via a structure-driven computational workflow</a>
+</h3>
+<div class="delink listing-description"><a href="./post/260211/s41467_025_67361_9_260212_171621.html" class="no-external">
+<p>A high-throughput computational workflow for antibody structure prediction and de novo epitope-specific design.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./post/260211/s41467_025_67361_9_260212_171621.html" class="no-external">
+<div class="listing-date">
+Feb 11, 2026
+</div>
+<div class="listing-author">
+Fandi Wu
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="QmlwYXJhdG9waWMlMkNBbnRpYm9kaWVzJTJDT25jb2xvZ3k=" data-listing-date-sort="1770681600000" data-listing-file-modified-sort="1776929241969" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="53" data-listing-word-count-sort="10475">
+<div class="thumbnail"><a href="./post/260210/article.html" class="no-external">
 
-<tr data-index="1" data-listing-date-sort="1776902400000" data-listing-file-modified-sort="1776929155657" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="95" data-listing-word-count-sort="18901" data-listing-title-sort="Nonspecific Cellular Interactions Are a Key Determinant in the Disposition of Fc-Fused Proteins" data-listing-filename-sort="nonspecific_cellular_interactions_are.qmd">
-<td>
-<span class="listing-date">Apr 23, 2026</span>
-</td>
-<td>
-<a href="./post/260423/nonspecific_cellular_interactions_are.html" class="title listing-title">Nonspecific Cellular Interactions Are a Key Determinant in the Disposition of Fc-Fused Proteins</a>
-</td>
-<td>
-<span class="listing-author">Mark A. Bryniarski, Songyu Wang, Aochiu Chen, Brian Coventry, Elif Nihal Korkmaz, Md Tariqul Haque Tuhin, Eunkyung Clare Ko, Devin L. Wakefield, Edward L. LaGory, Hao Wu, Achala Punchi Hewage, Khue Dang, Marcus Soto, Manuel Ponce, Esperanza Ojeda, Kip P. Conner, Lance J. Stewart, Christine E. Tinberg, Ai Ching Lim, David Baker, and Kevin D. Cook</span>
-</td>
+<img loading="lazy" src="./post/260210/images/19bb9a286d2341d8b4f6957eb9f6e4f75a546ac8b9fd169181461e3c3e6e8ecb.jpg" class="thumbnail-image">
 
-</tr>
-
-<tr data-index="2" data-listing-date-sort="1770768000000" data-listing-file-modified-sort="1776929155644" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="91" data-listing-word-count-sort="18048" data-listing-title-sort="De novo design of epitope-specific antibodies via a structure-driven computational workflow" data-listing-filename-sort="s41467_025_67361_9_260212_171621.qmd">
-<td>
-<span class="listing-date">Feb 11, 2026</span>
-</td>
-<td>
-<a href="./post/260211/s41467_025_67361_9_260212_171621.html" class="title listing-title">De novo design of epitope-specific antibodies via a structure-driven computational workflow</a>
-</td>
-<td>
-<span class="listing-author">Fandi Wu</span>
-</td>
-
-</tr>
-
-<tr data-index="3" data-listing-date-sort="1770681600000" data-listing-file-modified-sort="1776929155634" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="53" data-listing-word-count-sort="10475" data-listing-title-sort="Biparatopic antibodies: therapeutic applications and prospects" data-listing-filename-sort="article.qmd">
-<td>
-<span class="listing-date">Feb 10, 2026</span>
-</td>
-<td>
-<a href="./post/260210/article.html" class="title listing-title">Biparatopic antibodies: therapeutic applications and prospects</a>
-</td>
-<td>
-<span class="listing-author">David L. Niquille, Kyle M. Fitzgerald, Nimish Gera</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./post/260210/article.html" class="no-external">Biparatopic antibodies: therapeutic applications and prospects</a>
+</h3>
+<div class="delink listing-description"><a href="./post/260210/article.html" class="no-external">
+<p>Biparatopic antibodies bind distinct, non-overlapping epitopes on an antigen, enabling new mechanisms of action.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./post/260210/article.html" class="no-external">
+<div class="listing-date">
+Feb 10, 2026
+</div>
+<div class="listing-author">
+David L. Niquille, Kyle M. Fitzgerald, Nimish Gera
+</div>
+</a>
+</div>
+</div>
+</div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
