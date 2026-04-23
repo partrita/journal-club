@@ -9,12 +9,6 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - text: Articles
-        menu:
-          - href: post/260423/nonspecific_cellular_interactions_are.qmd
-            text: "Fc-Fused Proteins Disposition (EN)"
-          - href: post/260423/nonspecific_cellular_interactions_are_ko.qmd
-            text: "Fc-Fused Proteins Disposition (KO)"
       - about.qmd
 
 format:
