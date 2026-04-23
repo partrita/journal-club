@@ -713,7 +713,3 @@ Point (pI) Changes after Fluorescent Conjugation. A The TH1 charge series was la
    
 Supporting Figure 7: Prescence of microvascular networks (MVNs) influences interstitial diffusion behavior. A Fluorescence recovery after photobleaching (FRAP) curve plot of analytes run in the microfluidic devices without MVN. B Diffusivity measurements obtained from the FRAP studies with and without MVN.
 
-## References
-
-1. Bryniarski, M. A., Tuhin, M. T. H., Acker, T. M., Wakefield, D. L., Sethaputra, P. G., Cook, K. D. et al. (2024): Cellular Neonatal Fc Receptor Recycling Efficiencies can Differentiate Target-Independent Clearance Mechanisms of Monoclonal Antibodies J Pharm Sci 113, 2879-2894 10.1016/j.xphs.2024.06.013   
-2. Bryniarski, M. A., Tuhin, M. T. H., Shomin, C. D., Nasrollahi, F., Ko, E. C., Soto, M. et al. (2024): Utility of Cellular Measurements of Non-Specific Endocytosis to Assess the Target-Independent Clearance of Monoclonal Antibodies J Pharm Sci 10.1016/j.xphs.2024.07.009
