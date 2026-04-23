@@ -2,6 +2,9 @@
 title: "De novo design of epitope-specific antibodies via a structure-driven computational workflow"
 author: ["Fandi Wu"]
 date: "2026-02-11"
+description: "A high-throughput computational workflow for antibody structure prediction and de novo epitope-specific design."
+image: "images/2aab37fc2e7fee83cd88246f261756ef2f31ac22dbd8a5ff23395aa95e4d9ce1.jpg"
+categories: [Antibody Design, Computational Biology, tFold System]
 ---
 
 > Wu, F., Zhao, Y., Wu, J. et al. De novo design of epitope-specific antibodies via a structure-driven computational workflow. Nat Commun 17, 625 (2026). https://doi.org/10.1038/s41467-025-67361-9

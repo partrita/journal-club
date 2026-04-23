@@ -4,6 +4,9 @@ author: "Mark A. Bryniarski, Songyu Wang, Aochiu Chen, Brian Coventry, Elif Niha
 date: "2026-04-23"
 abstract: |
   치료용 단백질 구조의 다양성이 계속해서 진화함에 따라, 그들의 약동학적(pharmacokinetic) 특성을 결정하는 기전을 이해하는 것이 필수적이다. 본 연구는 결정화 가능 파편(fragment crystallizable, Fc) 영역을 포함하는 단백질의 표적 독립적 소실(target-independent disposition)에 가장 중요한 물리화학적 속성과 세포 과정을 규명하기 위해 시작되었다. 우리는 마우스에서 알려진 결합 파트너가 없는 5개의 데 노보(de novo) 생성 단백질 스캐폴드의 표면 특성을 체계적으로 재설계하여, 다양한 물리화학적 특성을 나타내는 총 35개의 Fc 융합 단백질을 생산했다. 야생형 마우스에서의 약동학 연구 결과, 제거율(elimination rates)의 현저한 차이와 광범위한 조직 축적이 관찰되었으며, 이는 전하 기술자(charge descriptors)와 가장 강력하게 연관되어 있었다. 일련의 인 비트로(in vitro) 연구를 통해 이러한 인 비보(in vivo) 관찰 결과가 세포 비특이성(cellular nonspecificity)과 유의미한 상관관계가 있음을 입증했다. 즉, 양의 표면 전하는 더 높은 비특이적 흡착 세포내섭취(nonspecific adsorptive endocytosis), 신생아 Fc 수용체(neonatal Fc receptor, FcRn)에 의한 재활용 효율 감소, 그리고 순 세포 축적을 유발했다. 종합적으로, 우리의 결과는 Fc 융합 단백질의 소실이 전하에 의해 어떻게 영향을 받는지에 대한 상세한 설명을 제공하며, 이는 약동학적 특징을 최적화하기 위한 단백질 공학적 노력을 도울 것이다.
+description: "Fc 융합 단백질의 체내 소실에 핵심적인 물리화학적 속성과 세포 과정에 대한 연구."
+image: "images/86fbd11842e8094367259a820a7f027fe9a6f0947826d0b5c07c638717a84a74.jpg"
+categories: [약동학, Fc 융합 단백질, 단백질 공학]
 ---
 
 ![](images/86fbd11842e8094367259a820a7f027fe9a6f0947826d0b5c07c638717a84a74.jpg)

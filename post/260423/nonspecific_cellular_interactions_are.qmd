@@ -4,6 +4,9 @@ author: "Mark A. Bryniarski, Songyu Wang, Aochiu Chen, Brian Coventry, Elif Niha
 date: "2026-04-23"
 abstract: |
   As the diversity of therapeutic protein structures continues to evolve, it is essential to understand the mechanisms that determine their pharmacokinetic properties. The current work was initiated to establish the physicochemical attributes and cellular processes most crucial for the target-independent disposition of proteins possessing a fragment crystallizable (Fc) region. We systematically redesigned the surface properties of five de novo-generated protein scaffolds lacking any known binding partner in mice to produce a total of 35 Fc-fused proteins exhibiting a diverse set of physicochemical characteristics. Pharmacokinetic studies in wild-type mice revealed a profound spread in elimination rates and extensive tissue accumulation that was most strongly associated with charge descriptors. A suite of in vitro studies demonstrated that these in vivo observations significantly correlated to cellular nonspecificity wherein positive surface charge caused higher nonspecific adsorptive endocytosis, diminished recycling efficiency by the neonatal Fc receptor, and net cellular accumulation. Combined, our results provide a detailed explanation for how the disposition of Fc-fused proteins is impacted by charge, which will aid protein engineering efforts aimed at optimizing pharmacokinetic features.
+description: "Physicochemical attributes and cellular processes crucial for the target-independent disposition of Fc-fused proteins."
+image: "images/86fbd11842e8094367259a820a7f027fe9a6f0947826d0b5c07c638717a84a74.jpg"
+categories: [Pharmacokinetics, Fc-fused Proteins, Protein Engineering]
 ---
 
 ![](images/86fbd11842e8094367259a820a7f027fe9a6f0947826d0b5c07c638717a84a74.jpg)

@@ -1,13 +1,14 @@
 ---
 title: "List of article"
 listing:
-  contents: post
-  type: table
+  contents: 
+    - "post/**/*.qmd"
+  type: default
   sort: "date desc"
-  categories: false
+  categories: true
   sort-ui: true
   filter-ui: true
-  fields: [date, title, author]
+  fields: [date, title, author, description, image]
 ---
 
-This is a Quarto website. To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+이곳은 최신 바이오 및 제약 관련 논문들을 리뷰하고 공유하는 저널 클럽입니다. 아래 리스트에서 등록된 논문 기사들을 확인하실 수 있습니다.
